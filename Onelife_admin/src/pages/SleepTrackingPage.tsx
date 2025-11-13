@@ -50,7 +50,6 @@ const SleepTrackingPage = () => {
   }, []);
 
   const fetchSleepRecords = async () => {
-    setLoading(true);
     try {
       const token = localStorage.getItem('adminToken');
       const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/sleep-tracking`, {
@@ -62,8 +61,6 @@ const SleepTrackingPage = () => {
       }
     } catch (err) {
       console.error('Failed to fetch sleep records', err);
-    } finally {
-      setLoading(false);
     }
   };
 
