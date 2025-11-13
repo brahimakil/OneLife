@@ -78,7 +78,7 @@ const WorkoutProgressPage = () => {
   const [plans, setPlans] = useState<Plan[]>([]);
   const [routines, setRoutines] = useState<Routine[]>([]);
   const [exercises, setExercises] = useState<Exercise[]>([]);
-  const [availableExercises, setAvailableExercises] = useState<Exercise[]>([]);
+  const [, setAvailableExercises] = useState<Exercise[]>([]);
   const [selectedRoutine, setSelectedRoutine] = useState<Routine | null>(null);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');

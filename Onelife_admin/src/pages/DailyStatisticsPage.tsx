@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MdCalendarToday, MdSearch, MdFilterList, MdDownload, MdPerson, MdFitnessCenter, MdLocalDrink, MdRestaurant, MdBedtime, MdTrendingUp, MdTrendingDown, MdCheckCircle, MdCancel } from 'react-icons/md';
+import { MdCalendarToday, MdFilterList, MdDownload, MdPerson, MdFitnessCenter, MdCheckCircle, MdCancel } from 'react-icons/md';
 import './DailyStatisticsPage.css';
 
 interface DailyStatistic {
@@ -54,10 +54,8 @@ const DailyStatisticsPage = () => {
   const [loading, setLoading] = useState(false);
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedUserId, setSelectedUserId] = useState('');
-  const [searchTerm, setSearchTerm] = useState('');
   const [filterStatus, setFilterStatus] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
-  const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
   const itemsPerPage = 9;
   const [error, setError] = useState('');
 
@@ -162,7 +160,6 @@ const DailyStatisticsPage = () => {
     setSelectedDate('');
     setSelectedUserId('');
     setFilterStatus('all');
-    setSearchTerm('');
     setCurrentPage(1);
   };
 

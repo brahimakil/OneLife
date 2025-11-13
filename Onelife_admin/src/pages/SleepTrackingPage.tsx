@@ -29,7 +29,6 @@ const SleepTrackingPage = () => {
   const [sleepRecords, setSleepRecords] = useState<SleepTracking[]>([]);
   const [users, setUsers] = useState<User[]>([]);
   const [subscriptions, setSubscriptions] = useState<any[]>([]);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [viewMode, setViewMode] = useState<'list' | 'calendar'>('calendar');
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);

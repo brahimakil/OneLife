@@ -7,7 +7,12 @@ async function bootstrap() {
   
   // Enable CORS for frontend
   app.enableCors({
-    origin: ['http://localhost:5173', 'http://localhost:3001'], // Vite and other dev servers
+    origin: [
+      'http://localhost:5173', 
+      'http://localhost:3001',
+      'https://one-life-orpin.vercel.app',
+      /\.vercel\.app$/ // Allow all Vercel preview deployments
+    ],
     credentials: true,
   });
 

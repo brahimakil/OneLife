@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
-import { MdDelete, MdClose, MdRestaurant, MdCalendarToday, MdViewList, MdAdd } from 'react-icons/md';
+import { MdDelete, MdClose, MdCalendarToday, MdViewList, MdAdd } from 'react-icons/md';
 import 'react-calendar/dist/Calendar.css';
 
 interface User {
